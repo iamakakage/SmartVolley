@@ -1,0 +1,26 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"SmartVolley",
+			"icon":":/logos/logos/1.png",
+			"frameless": true,
+			"transluscentBg": true,
+			"sizeGrip": "sizeGrip",
+			"navigation":[
+				{
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
+					"restore":[
+						{
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/icons-dark/icons/dark/square.svg",
+							"maximizedIcon": ":/icons-dark/icons/dark/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	]
+}

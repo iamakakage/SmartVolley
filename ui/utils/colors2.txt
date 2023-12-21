@@ -1,0 +1,4 @@
+A1: #9a9cea
+A2: #a2b9ee
+A3: #a2dcee
+A4: #adeee2
