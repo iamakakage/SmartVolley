@@ -65,7 +65,13 @@
      <number>0</number>
     </property>
     <item alignment="Qt::AlignLeft">
-     <widget class="QWidget" name="leftMenuContainer" native="true">
+     <widget class="QCustomSlideMenu" name="leftMenuContainer" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>45</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
         <number>0</number>
@@ -82,7 +88,7 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignLeft">
+       <item>
         <widget class="QWidget" name="leftMenuSubContainer" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <property name="spacing">
@@ -350,7 +356,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="centerMenuContainer" native="true">
+     <widget class="QCustomSlideMenu" name="centerMenuContainer" native="true">
       <property name="minimumSize">
        <size>
         <width>200</width>
@@ -417,7 +423,7 @@
               </widget>
              </item>
              <item alignment="Qt::AlignRight">
-              <widget class="QPushButton" name="pushButton">
+              <widget class="QPushButton" name="closeCenterMenuBtn">
                <property name="toolTip">
                 <string>Close Menu</string>
                </property>
@@ -440,7 +446,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QStackedWidget" name="stackedWidget">
+           <widget class="QCustomQStackedWidget" name="centerMenuPages">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -637,7 +643,24 @@
               <number>0</number>
              </property>
              <item>
-              <widget class="QPushButton" name="pushButton_6">
+              <widget class="QPushButton" name="notificationBtn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="../resources/resources.qrc">
+                 <normaloff>:/icons-dark/icons/dark/bell.svg</normaloff>:/icons-dark/icons/dark/bell.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="moreMenuBtn">
                <property name="toolTip">
                 <string>More</string>
                </property>
@@ -657,7 +680,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_5">
+              <widget class="QPushButton" name="profileMenuBtn">
                <property name="toolTip">
                 <string>Profile</string>
                </property>
@@ -756,12 +779,18 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="minimumSize">
+          <size>
+           <width>882</width>
+           <height>451</height>
+          </size>
+         </property>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
            <widget class="QWidget" name="mainContentsContainer" native="true">
             <layout class="QVBoxLayout" name="verticalLayout_15">
              <item>
-              <widget class="QStackedWidget" name="stackedWidget_3">
+              <widget class="QCustomQStackedWidget" name="mainPages">
                <widget class="QWidget" name="page_6">
                 <layout class="QVBoxLayout" name="verticalLayout_16">
                  <item>
@@ -831,11 +860,17 @@
            </widget>
           </item>
           <item alignment="Qt::AlignRight">
-           <widget class="QWidget" name="rightMenuContainer" native="true">
+           <widget class="QCustomSlideMenu" name="rightMenuContainer" native="true">
             <property name="minimumSize">
              <size>
               <width>200</width>
               <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>433</height>
              </size>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_11">
@@ -898,7 +933,7 @@
                     </widget>
                    </item>
                    <item alignment="Qt::AlignRight">
-                    <widget class="QPushButton" name="pushButton_7">
+                    <widget class="QPushButton" name="closeRightMenuBtn">
                      <property name="toolTip">
                       <string>Close Menu</string>
                      </property>
@@ -921,7 +956,7 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QStackedWidget" name="stackedWidget_2">
+                 <widget class="QCustomQStackedWidget" name="rightMenuPages">
                   <property name="currentIndex">
                    <number>0</number>
                   </property>
@@ -979,7 +1014,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QWidget" name="popupNotificationContainer" native="true">
+        <widget class="QCustomSlideMenu" name="popupNotificationContainer" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_19">
           <item>
            <widget class="QWidget" name="popupNotificationSubContainer" native="true">
@@ -1024,7 +1059,7 @@
                  </widget>
                 </item>
                 <item alignment="Qt::AlignRight">
-                 <widget class="QPushButton" name="pushButton_8">
+                 <widget class="QPushButton" name="closeNotificationBtn">
                   <property name="toolTip">
                    <string>Close notification</string>
                   </property>
@@ -1093,8 +1128,8 @@
            <widget class="QFrame" name="sizeGrip">
             <property name="minimumSize">
              <size>
-              <width>10</width>
-              <height>10</height>
+              <width>30</width>
+              <height>30</height>
              </size>
             </property>
             <property name="maximumSize">
@@ -1120,6 +1155,20 @@
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widgets.QCustomSlideMenu.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomQStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">Custom_Widgets.QCustomQStackedWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resources/resources.qrc"/>
  </resources>
