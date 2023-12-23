@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceLEjTRw.ui'
+## Form generated from reading UI file 'interfaceNWVonU.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -702,6 +702,6 @@ class Ui_MainWindow(object):
         self.closeNotificationBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close notification", None))
 #endif // QT_CONFIG(tooltip)
         self.closeNotificationBtn.setText("")
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Copyright MHN", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Copyright M&M", None))
     # retranslateUi
 
