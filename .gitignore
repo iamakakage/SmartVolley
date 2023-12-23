@@ -4,3 +4,4 @@ aiCodes/Street_View_House_Numbers_master/hdf5/
 aiCodes/Street_View_House_Numbers_master/test/
 aiCodes/Street_View_House_Numbers_master/train/
 aiCodes/Street_View_House_Numbers_master/*.h5
+ui/modules/__pycache__/
