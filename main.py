@@ -5,7 +5,7 @@ import os
 from interface import *
 from Custom_Widgets import *
 import camera
-import records
+import media
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         QMainWindow.__init__(self)
@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
 
         self.cameraHandler = camera.camera_handler(container = self)
         self.defaultCameraAddress = "127.0.0.1"
-        self.recorder = records.recorder()
+        self.recorder = media.recorder()
 
     def connectEvents(self):
         #Center Menu
