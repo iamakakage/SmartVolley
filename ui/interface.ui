@@ -45,6 +45,15 @@
 }
 #rightMenuSubContainer,#footerContainer{
 	background-color: #a2dcee;
+}
+#camControllerMenuSubContainer{
+	background-color: #a2dcee;
+}
+#camPanelAddressMenuContainer{
+	background-color: #9a9cea;
+}
+#camScreenSubContainer{
+	background-color: #000000;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -184,7 +193,7 @@
               <number>10</number>
              </property>
              <item>
-              <widget class="QPushButton" name="homeBtn">
+              <widget class="QPushButton" name="camBtn">
                <property name="toolTip">
                 <string>Home</string>
                </property>
@@ -192,11 +201,11 @@
                 <string notr="true">background-color: #a2b9ee;</string>
                </property>
                <property name="text">
-                <string>Home</string>
+                <string>camera</string>
                </property>
                <property name="icon">
                 <iconset resource="../resources/resources.qrc">
-                 <normaloff>:/icons-dark/icons/dark/home.svg</normaloff>:/icons-dark/icons/dark/home.svg</iconset>
+                 <normaloff>:/icons-downloaded/icons/downloaded/cam.png</normaloff>:/icons-downloaded/icons/downloaded/cam.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -791,29 +800,605 @@
             <layout class="QVBoxLayout" name="verticalLayout_15">
              <item>
               <widget class="QCustomQStackedWidget" name="mainPages">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
                <widget class="QWidget" name="page_6">
-                <layout class="QVBoxLayout" name="verticalLayout_16">
+                <layout class="QVBoxLayout" name="verticalLayout_16" stretch="0">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
-                  <widget class="QLabel" name="label_10">
-                   <property name="font">
-                    <font>
-                     <pointsize>13</pointsize>
-                     <weight>75</weight>
-                     <bold>true</bold>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Home</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
+                  <widget class="QWidget" name="camPanelSubContainer" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_21">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_11">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_14">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QWidget" name="camScreenContainer" native="true">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_23">
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <widget class="QWidget" name="camScreenSubContainer" native="true">
+                            <layout class="QVBoxLayout" name="verticalLayout_26">
+                             <property name="spacing">
+                              <number>0</number>
+                             </property>
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>0</number>
+                             </property>
+                             <item>
+                              <widget class="QStackedWidget" name="camDisplayPages">
+                               <widget class="QWidget" name="camScreenDisconnected">
+                                <layout class="QVBoxLayout" name="verticalLayout_27">
+                                 <property name="spacing">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="camDisplayDisconnectedLabel">
+                                   <property name="text">
+                                    <string/>
+                                   </property>
+                                   <property name="pixmap">
+                                    <pixmap resource="../resources/resources.qrc">:/images-downloaded/images/downloaded/disconnected.jpg</pixmap>
+                                   </property>
+                                   <property name="scaledContents">
+                                    <bool>true</bool>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                               <widget class="QWidget" name="camScreenConnected">
+                                <layout class="QVBoxLayout" name="verticalLayout_28">
+                                 <property name="spacing">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="leftMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="topMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="rightMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <property name="bottomMargin">
+                                  <number>0</number>
+                                 </property>
+                                 <item>
+                                  <widget class="QLabel" name="camDisplayConnectedLabel">
+                                   <property name="text">
+                                    <string>TextLabel</string>
+                                   </property>
+                                  </widget>
+                                 </item>
+                                </layout>
+                               </widget>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QWidget" name="camControllerMenuContainer" native="true">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_22">
+                          <property name="spacing">
+                           <number>0</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item alignment="Qt::AlignRight">
+                           <widget class="QCustomSlideMenu" name="camControllerMenuSubContainer" native="true">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <layout class="QVBoxLayout" name="verticalLayout_24">
+                             <property name="spacing">
+                              <number>5</number>
+                             </property>
+                             <property name="leftMargin">
+                              <number>5</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>5</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>5</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>5</number>
+                             </property>
+                             <item alignment="Qt::AlignTop">
+                              <widget class="QFrame" name="frame_12">
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                                <property name="spacing">
+                                 <number>0</number>
+                                </property>
+                                <property name="leftMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                 <number>0</number>
+                                </property>
+                                <item alignment="Qt::AlignLeft">
+                                 <widget class="QLabel" name="camControllerLabel">
+                                  <property name="font">
+                                   <font>
+                                    <weight>75</weight>
+                                    <bold>true</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>Controller</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item alignment="Qt::AlignRight">
+                                 <widget class="QPushButton" name="camControllerCloseBtn">
+                                  <property name="text">
+                                   <string/>
+                                  </property>
+                                  <property name="icon">
+                                   <iconset resource="../resources/resources.qrc">
+                                    <normaloff>:/icons-dark/icons/dark/x-circle.svg</normaloff>:/icons-dark/icons/dark/x-circle.svg</iconset>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="frame_13">
+                               <property name="sizePolicy">
+                                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                                 <horstretch>0</horstretch>
+                                 <verstretch>0</verstretch>
+                                </sizepolicy>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Raised</enum>
+                               </property>
+                               <layout class="QVBoxLayout" name="verticalLayout_25">
+                                <property name="spacing">
+                                 <number>0</number>
+                                </property>
+                                <property name="leftMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="topMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                 <number>0</number>
+                                </property>
+                                <property name="bottomMargin">
+                                 <number>0</number>
+                                </property>
+                                <item>
+                                 <widget class="QFrame" name="frame_14">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                                   <item alignment="Qt::AlignLeft">
+                                    <widget class="QLabel" name="label_10">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>90</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="text">
+                                      <string>Record</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <widget class="QCustomCheckBox" name="recordCb">
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QFrame" name="frame_15">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_17">
+                                   <item alignment="Qt::AlignLeft">
+                                    <widget class="QLabel" name="label_16">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>90</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="text">
+                                      <string>Player Detetction</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <widget class="QCustomCheckBox" name="playerDetectionCb">
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QFrame" name="frame_16">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_18">
+                                   <item alignment="Qt::AlignLeft">
+                                    <widget class="QLabel" name="label_17">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>90</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="text">
+                                      <string>Number Detection</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <widget class="QCustomCheckBox" name="numberDetectionCb">
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QFrame" name="frame_17">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_19">
+                                   <item alignment="Qt::AlignLeft">
+                                    <widget class="QLabel" name="label_18">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>90</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="text">
+                                      <string>Ball Detection</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <widget class="QCustomCheckBox" name="ballDetectionCb">
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QFrame" name="frame_18">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_20">
+                                   <item alignment="Qt::AlignLeft">
+                                    <widget class="QLabel" name="label_19">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>90</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="text">
+                                      <string>Action Detection</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <widget class="QCustomCheckBox" name="actionDetectionCb">
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QFrame" name="frame_19">
+                                  <property name="frameShape">
+                                   <enum>QFrame::StyledPanel</enum>
+                                  </property>
+                                  <property name="frameShadow">
+                                   <enum>QFrame::Raised</enum>
+                                  </property>
+                                  <layout class="QHBoxLayout" name="horizontalLayout_21">
+                                   <item alignment="Qt::AlignLeft">
+                                    <widget class="QLabel" name="label_20">
+                                     <property name="minimumSize">
+                                      <size>
+                                       <width>90</width>
+                                       <height>0</height>
+                                      </size>
+                                     </property>
+                                     <property name="text">
+                                      <string>Result Detection</string>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                   <item>
+                                    <widget class="QCustomCheckBox" name="resultDetectionCb">
+                                     <property name="text">
+                                      <string/>
+                                     </property>
+                                    </widget>
+                                   </item>
+                                  </layout>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignBottom">
+                     <widget class="QFrame" name="camPanelAddressMenuContainer">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <item>
+                        <widget class="QLineEdit" name="camAddressLe">
+                         <property name="placeholderText">
+                          <string>Camera ip address...leave empty for default address</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QPushButton" name="camConnectBtn">
+                         <property name="font">
+                          <font>
+                           <pointsize>13</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 0, 0);</string>
+                         </property>
+                         <property name="text">
+                          <string>Connect</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="camControllerOpenBtn">
+                         <property name="font">
+                          <font>
+                           <pointsize>13</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="../resources/resources.qrc">
+                           <normaloff>:/icons-dark/icons/dark/more-horizontal.svg</normaloff>:/icons-dark/icons/dark/more-horizontal.svg</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>24</width>
+                           <height>24</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
                </widget>
                <widget class="QWidget" name="page_7">
                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QLabel" name="label_11">
                    <property name="font">
@@ -835,6 +1420,21 @@
                </widget>
                <widget class="QWidget" name="page_8">
                 <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QLabel" name="label_12">
                    <property name="font">
@@ -1167,6 +1767,11 @@
    <extends>QStackedWidget</extends>
    <header location="global">Custom_Widgets.QCustomQStackedWidget.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header location="global">Custom_Widgets.QCustomCheckBox.h</header>
   </customwidget>
  </customwidgets>
  <resources>

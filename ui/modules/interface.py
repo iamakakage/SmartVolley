@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceNWVonU.ui'
+## Form generated from reading UI file 'interfaceoeeBut.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -14,6 +14,7 @@ from PySide2.QtWidgets import *
 
 from Custom_Widgets.QCustomSlideMenu import QCustomSlideMenu
 from Custom_Widgets.QCustomQStackedWidget import QCustomQStackedWidget
+from Custom_Widgets.QCustomCheckBox import QCustomCheckBox
 
 import resources_rc
 
@@ -53,6 +54,15 @@ class Ui_MainWindow(object):
 "}\n"
 "#rightMenuSubContainer,#footerContainer{\n"
 "	background-color: #a2dcee;\n"
+"}\n"
+"#camControllerMenuSubContainer{\n"
+"	background-color: #a2dcee;\n"
+"}\n"
+"#camPanelAddressMenuContainer{\n"
+"	background-color: #9a9cea;\n"
+"}\n"
+"#camScreenSubContainer{\n"
+"	background-color: #000000;\n"
 "}")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -106,15 +116,15 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 10, 0, 10)
-        self.homeBtn = QPushButton(self.frame_2)
-        self.homeBtn.setObjectName(u"homeBtn")
-        self.homeBtn.setStyleSheet(u"background-color: #a2b9ee;")
+        self.camBtn = QPushButton(self.frame_2)
+        self.camBtn.setObjectName(u"camBtn")
+        self.camBtn.setStyleSheet(u"background-color: #a2b9ee;")
         icon1 = QIcon()
-        icon1.addFile(u":/icons-dark/icons/dark/home.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.homeBtn.setIcon(icon1)
-        self.homeBtn.setIconSize(QSize(24, 24))
+        icon1.addFile(u":/icons-downloaded/icons/downloaded/cam.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.camBtn.setIcon(icon1)
+        self.camBtn.setIconSize(QSize(24, 24))
 
-        self.verticalLayout_3.addWidget(self.homeBtn)
+        self.verticalLayout_3.addWidget(self.camBtn)
 
         self.dataBtn = QPushButton(self.frame_2)
         self.dataBtn.setObjectName(u"dataBtn")
@@ -416,19 +426,299 @@ class Ui_MainWindow(object):
         self.page_6 = QWidget()
         self.page_6.setObjectName(u"page_6")
         self.verticalLayout_16 = QVBoxLayout(self.page_6)
+        self.verticalLayout_16.setSpacing(0)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.label_10 = QLabel(self.page_6)
-        self.label_10.setObjectName(u"label_10")
-        self.label_10.setFont(font)
-        self.label_10.setAlignment(Qt.AlignCenter)
+        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.camPanelSubContainer = QWidget(self.page_6)
+        self.camPanelSubContainer.setObjectName(u"camPanelSubContainer")
+        self.verticalLayout_21 = QVBoxLayout(self.camPanelSubContainer)
+        self.verticalLayout_21.setSpacing(0)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.verticalLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.frame_11 = QFrame(self.camPanelSubContainer)
+        self.frame_11.setObjectName(u"frame_11")
+        sizePolicy2.setHeightForWidth(self.frame_11.sizePolicy().hasHeightForWidth())
+        self.frame_11.setSizePolicy(sizePolicy2)
+        self.frame_11.setFrameShape(QFrame.StyledPanel)
+        self.frame_11.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_14 = QHBoxLayout(self.frame_11)
+        self.horizontalLayout_14.setSpacing(0)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.camScreenContainer = QWidget(self.frame_11)
+        self.camScreenContainer.setObjectName(u"camScreenContainer")
+        sizePolicy1.setHeightForWidth(self.camScreenContainer.sizePolicy().hasHeightForWidth())
+        self.camScreenContainer.setSizePolicy(sizePolicy1)
+        self.verticalLayout_23 = QVBoxLayout(self.camScreenContainer)
+        self.verticalLayout_23.setSpacing(0)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(0, 0, 0, 0)
+        self.camScreenSubContainer = QWidget(self.camScreenContainer)
+        self.camScreenSubContainer.setObjectName(u"camScreenSubContainer")
+        self.verticalLayout_26 = QVBoxLayout(self.camScreenSubContainer)
+        self.verticalLayout_26.setSpacing(0)
+        self.verticalLayout_26.setObjectName(u"verticalLayout_26")
+        self.verticalLayout_26.setContentsMargins(0, 0, 0, 0)
+        self.camDisplayPages = QStackedWidget(self.camScreenSubContainer)
+        self.camDisplayPages.setObjectName(u"camDisplayPages")
+        self.camScreenDisconnected = QWidget()
+        self.camScreenDisconnected.setObjectName(u"camScreenDisconnected")
+        self.verticalLayout_27 = QVBoxLayout(self.camScreenDisconnected)
+        self.verticalLayout_27.setSpacing(0)
+        self.verticalLayout_27.setObjectName(u"verticalLayout_27")
+        self.verticalLayout_27.setContentsMargins(0, 0, 0, 0)
+        self.camDisplayDisconnectedLabel = QLabel(self.camScreenDisconnected)
+        self.camDisplayDisconnectedLabel.setObjectName(u"camDisplayDisconnectedLabel")
+        self.camDisplayDisconnectedLabel.setPixmap(QPixmap(u":/images-downloaded/images/downloaded/disconnected.jpg"))
+        self.camDisplayDisconnectedLabel.setScaledContents(True)
 
-        self.verticalLayout_16.addWidget(self.label_10)
+        self.verticalLayout_27.addWidget(self.camDisplayDisconnectedLabel)
+
+        self.camDisplayPages.addWidget(self.camScreenDisconnected)
+        self.camScreenConnected = QWidget()
+        self.camScreenConnected.setObjectName(u"camScreenConnected")
+        self.verticalLayout_28 = QVBoxLayout(self.camScreenConnected)
+        self.verticalLayout_28.setSpacing(0)
+        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
+        self.verticalLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.camDisplayConnectedLabel = QLabel(self.camScreenConnected)
+        self.camDisplayConnectedLabel.setObjectName(u"camDisplayConnectedLabel")
+
+        self.verticalLayout_28.addWidget(self.camDisplayConnectedLabel)
+
+        self.camDisplayPages.addWidget(self.camScreenConnected)
+
+        self.verticalLayout_26.addWidget(self.camDisplayPages)
+
+
+        self.verticalLayout_23.addWidget(self.camScreenSubContainer)
+
+
+        self.horizontalLayout_14.addWidget(self.camScreenContainer)
+
+        self.camControllerMenuContainer = QWidget(self.frame_11)
+        self.camControllerMenuContainer.setObjectName(u"camControllerMenuContainer")
+        self.camControllerMenuContainer.setMinimumSize(QSize(0, 0))
+        self.verticalLayout_22 = QVBoxLayout(self.camControllerMenuContainer)
+        self.verticalLayout_22.setSpacing(0)
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.verticalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.camControllerMenuSubContainer = QCustomSlideMenu(self.camControllerMenuContainer)
+        self.camControllerMenuSubContainer.setObjectName(u"camControllerMenuSubContainer")
+        sizePolicy.setHeightForWidth(self.camControllerMenuSubContainer.sizePolicy().hasHeightForWidth())
+        self.camControllerMenuSubContainer.setSizePolicy(sizePolicy)
+        self.camControllerMenuSubContainer.setMinimumSize(QSize(0, 0))
+        self.verticalLayout_24 = QVBoxLayout(self.camControllerMenuSubContainer)
+        self.verticalLayout_24.setSpacing(5)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
+        self.verticalLayout_24.setContentsMargins(5, 5, 5, 5)
+        self.frame_12 = QFrame(self.camControllerMenuSubContainer)
+        self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setFrameShape(QFrame.StyledPanel)
+        self.frame_12.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_15 = QHBoxLayout(self.frame_12)
+        self.horizontalLayout_15.setSpacing(0)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.camControllerLabel = QLabel(self.frame_12)
+        self.camControllerLabel.setObjectName(u"camControllerLabel")
+        font2 = QFont()
+        font2.setBold(True)
+        font2.setWeight(75)
+        self.camControllerLabel.setFont(font2)
+
+        self.horizontalLayout_15.addWidget(self.camControllerLabel, 0, Qt.AlignLeft)
+
+        self.camControllerCloseBtn = QPushButton(self.frame_12)
+        self.camControllerCloseBtn.setObjectName(u"camControllerCloseBtn")
+        self.camControllerCloseBtn.setIcon(icon7)
+
+        self.horizontalLayout_15.addWidget(self.camControllerCloseBtn, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_24.addWidget(self.frame_12, 0, Qt.AlignTop)
+
+        self.frame_13 = QFrame(self.camControllerMenuSubContainer)
+        self.frame_13.setObjectName(u"frame_13")
+        sizePolicy2.setHeightForWidth(self.frame_13.sizePolicy().hasHeightForWidth())
+        self.frame_13.setSizePolicy(sizePolicy2)
+        self.frame_13.setFrameShape(QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_25 = QVBoxLayout(self.frame_13)
+        self.verticalLayout_25.setSpacing(0)
+        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
+        self.verticalLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.frame_14 = QFrame(self.frame_13)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setFrameShape(QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_16 = QHBoxLayout(self.frame_14)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.label_10 = QLabel(self.frame_14)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setMinimumSize(QSize(90, 0))
+
+        self.horizontalLayout_16.addWidget(self.label_10, 0, Qt.AlignLeft)
+
+        self.recordCb = QCustomCheckBox(self.frame_14)
+        self.recordCb.setObjectName(u"recordCb")
+
+        self.horizontalLayout_16.addWidget(self.recordCb)
+
+
+        self.verticalLayout_25.addWidget(self.frame_14)
+
+        self.frame_15 = QFrame(self.frame_13)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setFrameShape(QFrame.StyledPanel)
+        self.frame_15.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_17 = QHBoxLayout(self.frame_15)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.label_16 = QLabel(self.frame_15)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setMinimumSize(QSize(90, 0))
+
+        self.horizontalLayout_17.addWidget(self.label_16, 0, Qt.AlignLeft)
+
+        self.playerDetectionCb = QCustomCheckBox(self.frame_15)
+        self.playerDetectionCb.setObjectName(u"playerDetectionCb")
+
+        self.horizontalLayout_17.addWidget(self.playerDetectionCb)
+
+
+        self.verticalLayout_25.addWidget(self.frame_15)
+
+        self.frame_16 = QFrame(self.frame_13)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setFrameShape(QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_18 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_18.setObjectName(u"horizontalLayout_18")
+        self.label_17 = QLabel(self.frame_16)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setMinimumSize(QSize(90, 0))
+
+        self.horizontalLayout_18.addWidget(self.label_17, 0, Qt.AlignLeft)
+
+        self.numberDetectionCb = QCustomCheckBox(self.frame_16)
+        self.numberDetectionCb.setObjectName(u"numberDetectionCb")
+
+        self.horizontalLayout_18.addWidget(self.numberDetectionCb)
+
+
+        self.verticalLayout_25.addWidget(self.frame_16)
+
+        self.frame_17 = QFrame(self.frame_13)
+        self.frame_17.setObjectName(u"frame_17")
+        self.frame_17.setFrameShape(QFrame.StyledPanel)
+        self.frame_17.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_19 = QHBoxLayout(self.frame_17)
+        self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
+        self.label_18 = QLabel(self.frame_17)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setMinimumSize(QSize(90, 0))
+
+        self.horizontalLayout_19.addWidget(self.label_18, 0, Qt.AlignLeft)
+
+        self.ballDetectionCb = QCustomCheckBox(self.frame_17)
+        self.ballDetectionCb.setObjectName(u"ballDetectionCb")
+
+        self.horizontalLayout_19.addWidget(self.ballDetectionCb)
+
+
+        self.verticalLayout_25.addWidget(self.frame_17)
+
+        self.frame_18 = QFrame(self.frame_13)
+        self.frame_18.setObjectName(u"frame_18")
+        self.frame_18.setFrameShape(QFrame.StyledPanel)
+        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_20 = QHBoxLayout(self.frame_18)
+        self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
+        self.label_19 = QLabel(self.frame_18)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setMinimumSize(QSize(90, 0))
+
+        self.horizontalLayout_20.addWidget(self.label_19, 0, Qt.AlignLeft)
+
+        self.actionDetectionCb = QCustomCheckBox(self.frame_18)
+        self.actionDetectionCb.setObjectName(u"actionDetectionCb")
+
+        self.horizontalLayout_20.addWidget(self.actionDetectionCb)
+
+
+        self.verticalLayout_25.addWidget(self.frame_18)
+
+        self.frame_19 = QFrame(self.frame_13)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setFrameShape(QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_21 = QHBoxLayout(self.frame_19)
+        self.horizontalLayout_21.setObjectName(u"horizontalLayout_21")
+        self.label_20 = QLabel(self.frame_19)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setMinimumSize(QSize(90, 0))
+
+        self.horizontalLayout_21.addWidget(self.label_20, 0, Qt.AlignLeft)
+
+        self.resultDetectionCb = QCustomCheckBox(self.frame_19)
+        self.resultDetectionCb.setObjectName(u"resultDetectionCb")
+
+        self.horizontalLayout_21.addWidget(self.resultDetectionCb)
+
+
+        self.verticalLayout_25.addWidget(self.frame_19)
+
+
+        self.verticalLayout_24.addWidget(self.frame_13)
+
+
+        self.verticalLayout_22.addWidget(self.camControllerMenuSubContainer, 0, Qt.AlignRight)
+
+
+        self.horizontalLayout_14.addWidget(self.camControllerMenuContainer, 0, Qt.AlignRight)
+
+
+        self.verticalLayout_21.addWidget(self.frame_11)
+
+        self.camPanelAddressMenuContainer = QFrame(self.camPanelSubContainer)
+        self.camPanelAddressMenuContainer.setObjectName(u"camPanelAddressMenuContainer")
+        self.camPanelAddressMenuContainer.setFrameShape(QFrame.StyledPanel)
+        self.camPanelAddressMenuContainer.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_13 = QHBoxLayout(self.camPanelAddressMenuContainer)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.camAddressLe = QLineEdit(self.camPanelAddressMenuContainer)
+        self.camAddressLe.setObjectName(u"camAddressLe")
+
+        self.horizontalLayout_13.addWidget(self.camAddressLe)
+
+        self.camConnectBtn = QPushButton(self.camPanelAddressMenuContainer)
+        self.camConnectBtn.setObjectName(u"camConnectBtn")
+        self.camConnectBtn.setFont(font)
+        self.camConnectBtn.setStyleSheet(u"color: rgb(255, 0, 0);")
+
+        self.horizontalLayout_13.addWidget(self.camConnectBtn, 0, Qt.AlignRight)
+
+        self.camControllerOpenBtn = QPushButton(self.camPanelAddressMenuContainer)
+        self.camControllerOpenBtn.setObjectName(u"camControllerOpenBtn")
+        self.camControllerOpenBtn.setFont(font)
+        self.camControllerOpenBtn.setIcon(icon9)
+        self.camControllerOpenBtn.setIconSize(QSize(24, 24))
+
+        self.horizontalLayout_13.addWidget(self.camControllerOpenBtn)
+
+
+        self.verticalLayout_21.addWidget(self.camPanelAddressMenuContainer, 0, Qt.AlignBottom)
+
+
+        self.verticalLayout_16.addWidget(self.camPanelSubContainer)
 
         self.mainPages.addWidget(self.page_6)
         self.page_7 = QWidget()
         self.page_7.setObjectName(u"page_7")
         self.verticalLayout_17 = QVBoxLayout(self.page_7)
+        self.verticalLayout_17.setSpacing(0)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.verticalLayout_17.setContentsMargins(0, 0, 0, 0)
         self.label_11 = QLabel(self.page_7)
         self.label_11.setObjectName(u"label_11")
         self.label_11.setFont(font)
@@ -440,7 +730,9 @@ class Ui_MainWindow(object):
         self.page_8 = QWidget()
         self.page_8.setObjectName(u"page_8")
         self.verticalLayout_18 = QVBoxLayout(self.page_8)
+        self.verticalLayout_18.setSpacing(0)
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
         self.label_12 = QLabel(self.page_8)
         self.label_12.setObjectName(u"label_12")
         self.label_12.setFont(font)
@@ -540,11 +832,11 @@ class Ui_MainWindow(object):
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
         self.label_14 = QLabel(self.popupNotificationSubContainer)
         self.label_14.setObjectName(u"label_14")
-        font2 = QFont()
-        font2.setPointSize(10)
-        font2.setBold(False)
-        font2.setWeight(50)
-        self.label_14.setFont(font2)
+        font3 = QFont()
+        font3.setPointSize(10)
+        font3.setBold(False)
+        font3.setWeight(50)
+        self.label_14.setFont(font3)
 
         self.verticalLayout_20.addWidget(self.label_14)
 
@@ -619,6 +911,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
+        self.mainPages.setCurrentIndex(0)
         self.rightMenuPages.setCurrentIndex(0)
 
 
@@ -632,9 +925,9 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.menuBtn.setText("")
 #if QT_CONFIG(tooltip)
-        self.homeBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.camBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Home", None))
 #endif // QT_CONFIG(tooltip)
-        self.homeBtn.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.camBtn.setText(QCoreApplication.translate("MainWindow", u"camera", None))
 #if QT_CONFIG(tooltip)
         self.dataBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Data Analysis", None))
 #endif // QT_CONFIG(tooltip)
@@ -686,7 +979,25 @@ class Ui_MainWindow(object):
         self.closeBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close Window", None))
 #endif // QT_CONFIG(tooltip)
         self.closeBtn.setText("")
-        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.camDisplayDisconnectedLabel.setText("")
+        self.camDisplayConnectedLabel.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.camControllerLabel.setText(QCoreApplication.translate("MainWindow", u"Controller", None))
+        self.camControllerCloseBtn.setText("")
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Record", None))
+        self.recordCb.setText("")
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Player Detetction", None))
+        self.playerDetectionCb.setText("")
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Number Detection", None))
+        self.numberDetectionCb.setText("")
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Ball Detection", None))
+        self.ballDetectionCb.setText("")
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Action Detection", None))
+        self.actionDetectionCb.setText("")
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Result Detection", None))
+        self.resultDetectionCb.setText("")
+        self.camAddressLe.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Camera ip address...leave empty for default address", None))
+        self.camConnectBtn.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
+        self.camControllerOpenBtn.setText("")
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Data Analysis", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"Reports", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Right Menu", None))

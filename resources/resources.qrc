@@ -288,6 +288,9 @@
     <file>icons/light/zoom-in.svg</file>
     <file>icons/light/zoom-out.svg</file>
   </qresource>
+  <qresource prefix="icons-downloaded">
+    <file>icons/downloaded/cam.png</file>
+  </qresource>
   <qresource prefix="icons-dark">
     <file>icons/dark/activity.svg</file>
     <file>icons/dark/airplay.svg</file>
@@ -577,8 +580,10 @@
     <file>icons/dark/zoom-in.svg</file>
     <file>icons/dark/zoom-out.svg</file>
   </qresource>
-  <qresource prefix="images"/>
   <qresource prefix="logos">
     <file>logos/1.png</file>
+  </qresource>
+  <qresource prefix="images-downloaded">
+    <file>images/downloaded/disconnected.jpg</file>
   </qresource>
 </RCC>

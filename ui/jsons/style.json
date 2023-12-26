@@ -89,6 +89,25 @@
 			}]
 		},
 		{
+			"name": "camControllerMenuSubContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 165,
+				"height": "parent"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 100,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
 			"name": "popupNotificationContainer",
 			"defaultSize": [{
 				"width": 0,
@@ -132,7 +151,7 @@
 				{
 					"navigationButtons":[
 						{
-							"homeBtn": "page_6",
+							"camBtn": "page_6",
 							"dataBtn": "page_7",
 							"reportBtn": "page_8"
 						}
@@ -174,7 +193,7 @@
 	"QPushButtonGroup": [
 		{
 			"Buttons": [
-				"homeBtn",
+				"camBtn",
 				"dataBtn",
 				"reportBtn"
 			],
