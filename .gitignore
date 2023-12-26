@@ -7,3 +7,4 @@ aiCodes/Street_View_House_Numbers_master/*.h5
 ui/modules/__pycache__/
 handlers/__pycache__/
 records/
+.idea/
