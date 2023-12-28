@@ -43,15 +43,30 @@ class camera_handler():
         if len(self.frame_buffer) == 0:
             ret, frame = self.capture.read()
             self.frame_buffer.append(frame)
-        while((len(self.frame_buffer) > 0) and self.cameraStarted):
-            current_frame = self.frame_buffer[0]
-            self.frame_buffer.pop(0)
-            height, width, channel = current_frame.shape
-            bytesPerLine = 3 * width
-            qImg = QtGui.QImage(current_frame.data, width, height, bytesPerLine,QtGui.QImage.Format_RGB888).rgbSwapped()
-            pixmap = QtGui.QPixmap.fromImage(qImg)
-            self.container.ui.camDisplayConnectedLabel.setPixmap(pixmap)
-            self.container.ui.camDisplayConnectedLabel.show()
+        # while((len(self.frame_buffer) > 0) and self.cameraStarted):
+        #     current_frame = self.frame_buffer[0]
+        #     self.frame_buffer.pop(0)
+        #     height, width, channel = current_frame.shape
+        #     bytesPerLine = 3 * width
+        #     qImg = QtGui.QImage(current_frame.data, width, height, bytesPerLine,QtGui.QImage.Format_RGB888).rgbSwapped()
+        #     pixmap = QtGui.QPixmap.fromImage(qImg)
+        #     self.container.ui.camDisplayConnectedLabel.setPixmap(pixmap)
+        #     self.container.ui.camDisplayConnectedLabel.show()
+        #     ret, frame = self.capture.read()
+        #     if ret:
+        #         self.frame_buffer.append(frame)
+        #     if cv2.waitKey(1) & 0xFF == ord('q'):
+        #         break
+        while(self.cameraStarted):
+            if len(self.frame_buffer) > 0:
+                current_frame = self.frame_buffer[0]
+                self.frame_buffer.pop(0)
+                height, width, channel = current_frame.shape
+                bytesPerLine = 3 * width
+                qImg = QtGui.QImage(current_frame.data, width, height, bytesPerLine,QtGui.QImage.Format_RGB888).rgbSwapped()
+                pixmap = QtGui.QPixmap.fromImage(qImg)
+                self.container.ui.camDisplayConnectedLabel.setPixmap(pixmap)
+                self.container.ui.camDisplayConnectedLabel.show()
             ret, frame = self.capture.read()
             if ret:
                 self.frame_buffer.append(frame)
