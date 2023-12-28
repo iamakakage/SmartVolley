@@ -10,6 +10,7 @@ class camera_handler():
         self.container = container
         self.cameraStarted = False
 
+
     def connect(self, address, delay):
         self.cameraIp = address
         self.delay = delay

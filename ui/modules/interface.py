@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceoeeBut.ui'
+## Form generated from reading UI file 'interfaceRzkdXK.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -63,6 +63,13 @@ class Ui_MainWindow(object):
 "}\n"
 "#camScreenSubContainer{\n"
 "	background-color: #000000;\n"
+"}\n"
+"QComboBox{\n"
+"    border: 2px solid grey;\n"
+"    border-radius: "
+                        "5px;\n"
+"    background-color: rgb(255, 255, 255);\n"
+"	font: 75 20pt \"HP Simplified\";\n"
 "}")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -116,30 +123,40 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 10, 0, 10)
+        self.matchBtn = QPushButton(self.frame_2)
+        self.matchBtn.setObjectName(u"matchBtn")
+        self.matchBtn.setStyleSheet(u"background-color: #a2b9ee;")
+        icon1 = QIcon()
+        icon1.addFile(u":/logos/logos/1.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.matchBtn.setIcon(icon1)
+        self.matchBtn.setIconSize(QSize(24, 24))
+
+        self.verticalLayout_3.addWidget(self.matchBtn)
+
         self.camBtn = QPushButton(self.frame_2)
         self.camBtn.setObjectName(u"camBtn")
-        self.camBtn.setStyleSheet(u"background-color: #a2b9ee;")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons-downloaded/icons/downloaded/cam.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.camBtn.setIcon(icon1)
+        self.camBtn.setStyleSheet(u"")
+        icon2 = QIcon()
+        icon2.addFile(u":/icons-downloaded/icons/downloaded/cam.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.camBtn.setIcon(icon2)
         self.camBtn.setIconSize(QSize(24, 24))
 
         self.verticalLayout_3.addWidget(self.camBtn)
 
         self.dataBtn = QPushButton(self.frame_2)
         self.dataBtn.setObjectName(u"dataBtn")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons-dark/icons/dark/list.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.dataBtn.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons-dark/icons/dark/list.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.dataBtn.setIcon(icon3)
         self.dataBtn.setIconSize(QSize(24, 24))
 
         self.verticalLayout_3.addWidget(self.dataBtn)
 
         self.reportBtn = QPushButton(self.frame_2)
         self.reportBtn.setObjectName(u"reportBtn")
-        icon3 = QIcon()
-        icon3.addFile(u":/icons-dark/icons/dark/printer.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.reportBtn.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons-dark/icons/dark/printer.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.reportBtn.setIcon(icon4)
         self.reportBtn.setIconSize(QSize(24, 24))
 
         self.verticalLayout_3.addWidget(self.reportBtn)
@@ -161,27 +178,27 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setContentsMargins(0, 10, 0, 10)
         self.settingsBtn = QPushButton(self.frame_3)
         self.settingsBtn.setObjectName(u"settingsBtn")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons-dark/icons/dark/settings.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.settingsBtn.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons-dark/icons/dark/settings.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.settingsBtn.setIcon(icon5)
         self.settingsBtn.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.settingsBtn)
 
         self.infoBtn = QPushButton(self.frame_3)
         self.infoBtn.setObjectName(u"infoBtn")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons-dark/icons/dark/info.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.infoBtn.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons-dark/icons/dark/info.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.infoBtn.setIcon(icon6)
         self.infoBtn.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.infoBtn)
 
         self.helpBtn = QPushButton(self.frame_3)
         self.helpBtn.setObjectName(u"helpBtn")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons-dark/icons/dark/help-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.helpBtn.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons-dark/icons/dark/help-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.helpBtn.setIcon(icon7)
         self.helpBtn.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.helpBtn)
@@ -223,9 +240,9 @@ class Ui_MainWindow(object):
 
         self.closeCenterMenuBtn = QPushButton(self.frame_4)
         self.closeCenterMenuBtn.setObjectName(u"closeCenterMenuBtn")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons-dark/icons/dark/x-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.closeCenterMenuBtn.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons-dark/icons/dark/x-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.closeCenterMenuBtn.setIcon(icon8)
         self.closeCenterMenuBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_3.addWidget(self.closeCenterMenuBtn, 0, Qt.AlignRight)
@@ -342,27 +359,27 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.notificationBtn = QPushButton(self.frame_6)
         self.notificationBtn.setObjectName(u"notificationBtn")
-        icon8 = QIcon()
-        icon8.addFile(u":/icons-dark/icons/dark/bell.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.notificationBtn.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u":/icons-dark/icons/dark/bell.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.notificationBtn.setIcon(icon9)
         self.notificationBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_6.addWidget(self.notificationBtn)
 
         self.moreMenuBtn = QPushButton(self.frame_6)
         self.moreMenuBtn.setObjectName(u"moreMenuBtn")
-        icon9 = QIcon()
-        icon9.addFile(u":/icons-dark/icons/dark/more-horizontal.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.moreMenuBtn.setIcon(icon9)
+        icon10 = QIcon()
+        icon10.addFile(u":/icons-dark/icons/dark/more-horizontal.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.moreMenuBtn.setIcon(icon10)
         self.moreMenuBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_6.addWidget(self.moreMenuBtn)
 
         self.profileMenuBtn = QPushButton(self.frame_6)
         self.profileMenuBtn.setObjectName(u"profileMenuBtn")
-        icon10 = QIcon()
-        icon10.addFile(u":/icons-dark/icons/dark/user.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.profileMenuBtn.setIcon(icon10)
+        icon11 = QIcon()
+        icon11.addFile(u":/icons-dark/icons/dark/user.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.profileMenuBtn.setIcon(icon11)
         self.profileMenuBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_6.addWidget(self.profileMenuBtn)
@@ -379,25 +396,25 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.minimizeBtn = QPushButton(self.frame_7)
         self.minimizeBtn.setObjectName(u"minimizeBtn")
-        icon11 = QIcon()
-        icon11.addFile(u":/icons-dark/icons/dark/minus.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.minimizeBtn.setIcon(icon11)
+        icon12 = QIcon()
+        icon12.addFile(u":/icons-dark/icons/dark/minus.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.minimizeBtn.setIcon(icon12)
 
         self.horizontalLayout_4.addWidget(self.minimizeBtn)
 
         self.restoreBtn = QPushButton(self.frame_7)
         self.restoreBtn.setObjectName(u"restoreBtn")
-        icon12 = QIcon()
-        icon12.addFile(u":/icons-dark/icons/dark/square.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.restoreBtn.setIcon(icon12)
+        icon13 = QIcon()
+        icon13.addFile(u":/icons-dark/icons/dark/square.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.restoreBtn.setIcon(icon13)
 
         self.horizontalLayout_4.addWidget(self.restoreBtn)
 
         self.closeBtn = QPushButton(self.frame_7)
         self.closeBtn.setObjectName(u"closeBtn")
-        icon13 = QIcon()
-        icon13.addFile(u":/icons-dark/icons/dark/x.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.closeBtn.setIcon(icon13)
+        icon14 = QIcon()
+        icon14.addFile(u":/icons-dark/icons/dark/x.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.closeBtn.setIcon(icon14)
 
         self.horizontalLayout_4.addWidget(self.closeBtn)
 
@@ -423,6 +440,398 @@ class Ui_MainWindow(object):
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
         self.mainPages = QCustomQStackedWidget(self.mainContentsContainer)
         self.mainPages.setObjectName(u"mainPages")
+        self.page_9 = QWidget()
+        self.page_9.setObjectName(u"page_9")
+        self.verticalLayout_29 = QVBoxLayout(self.page_9)
+        self.verticalLayout_29.setSpacing(0)
+        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
+        self.verticalLayout_29.setContentsMargins(0, 0, 0, 0)
+        self.matchPanelSubContainer = QWidget(self.page_9)
+        self.matchPanelSubContainer.setObjectName(u"matchPanelSubContainer")
+        self.horizontalLayout_22 = QHBoxLayout(self.matchPanelSubContainer)
+        self.horizontalLayout_22.setSpacing(0)
+        self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
+        self.horizontalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.frame_20 = QFrame(self.matchPanelSubContainer)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_30 = QVBoxLayout(self.frame_20)
+        self.verticalLayout_30.setSpacing(0)
+        self.verticalLayout_30.setObjectName(u"verticalLayout_30")
+        self.verticalLayout_30.setContentsMargins(0, 0, 0, 0)
+        self.team1Combo = QComboBox(self.frame_20)
+        self.team1Combo.setObjectName(u"team1Combo")
+
+        self.verticalLayout_30.addWidget(self.team1Combo, 0, Qt.AlignTop)
+
+        self.scrollArea = QScrollArea(self.frame_20)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 203, 1496))
+        self.verticalLayout_33 = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_33.setObjectName(u"verticalLayout_33")
+        self.t1p1frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p1frame.setObjectName(u"t1p1frame")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.t1p1frame.sizePolicy().hasHeightForWidth())
+        self.t1p1frame.setSizePolicy(sizePolicy3)
+        self.t1p1frame.setMinimumSize(QSize(0, 100))
+        self.t1p1frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p1frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p1frame)
+
+        self.t1p2frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p2frame.setObjectName(u"t1p2frame")
+        sizePolicy3.setHeightForWidth(self.t1p2frame.sizePolicy().hasHeightForWidth())
+        self.t1p2frame.setSizePolicy(sizePolicy3)
+        self.t1p2frame.setMinimumSize(QSize(0, 100))
+        self.t1p2frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p2frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p2frame)
+
+        self.t1p3frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p3frame.setObjectName(u"t1p3frame")
+        sizePolicy3.setHeightForWidth(self.t1p3frame.sizePolicy().hasHeightForWidth())
+        self.t1p3frame.setSizePolicy(sizePolicy3)
+        self.t1p3frame.setMinimumSize(QSize(0, 100))
+        self.t1p3frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p3frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p3frame)
+
+        self.t1p4frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p4frame.setObjectName(u"t1p4frame")
+        sizePolicy3.setHeightForWidth(self.t1p4frame.sizePolicy().hasHeightForWidth())
+        self.t1p4frame.setSizePolicy(sizePolicy3)
+        self.t1p4frame.setMinimumSize(QSize(0, 100))
+        self.t1p4frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p4frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p4frame)
+
+        self.t1p5frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p5frame.setObjectName(u"t1p5frame")
+        sizePolicy3.setHeightForWidth(self.t1p5frame.sizePolicy().hasHeightForWidth())
+        self.t1p5frame.setSizePolicy(sizePolicy3)
+        self.t1p5frame.setMinimumSize(QSize(0, 100))
+        self.t1p5frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p5frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p5frame)
+
+        self.t1p6frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p6frame.setObjectName(u"t1p6frame")
+        sizePolicy3.setHeightForWidth(self.t1p6frame.sizePolicy().hasHeightForWidth())
+        self.t1p6frame.setSizePolicy(sizePolicy3)
+        self.t1p6frame.setMinimumSize(QSize(0, 100))
+        self.t1p6frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p6frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p6frame)
+
+        self.t1p7frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p7frame.setObjectName(u"t1p7frame")
+        sizePolicy3.setHeightForWidth(self.t1p7frame.sizePolicy().hasHeightForWidth())
+        self.t1p7frame.setSizePolicy(sizePolicy3)
+        self.t1p7frame.setMinimumSize(QSize(0, 100))
+        self.t1p7frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p7frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p7frame)
+
+        self.t1p8frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p8frame.setObjectName(u"t1p8frame")
+        sizePolicy3.setHeightForWidth(self.t1p8frame.sizePolicy().hasHeightForWidth())
+        self.t1p8frame.setSizePolicy(sizePolicy3)
+        self.t1p8frame.setMinimumSize(QSize(0, 100))
+        self.t1p8frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p8frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p8frame)
+
+        self.t1p9frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p9frame.setObjectName(u"t1p9frame")
+        sizePolicy3.setHeightForWidth(self.t1p9frame.sizePolicy().hasHeightForWidth())
+        self.t1p9frame.setSizePolicy(sizePolicy3)
+        self.t1p9frame.setMinimumSize(QSize(0, 100))
+        self.t1p9frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p9frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p9frame)
+
+        self.t1p10frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p10frame.setObjectName(u"t1p10frame")
+        sizePolicy3.setHeightForWidth(self.t1p10frame.sizePolicy().hasHeightForWidth())
+        self.t1p10frame.setSizePolicy(sizePolicy3)
+        self.t1p10frame.setMinimumSize(QSize(0, 100))
+        self.t1p10frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p10frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p10frame)
+
+        self.t1p11frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p11frame.setObjectName(u"t1p11frame")
+        sizePolicy3.setHeightForWidth(self.t1p11frame.sizePolicy().hasHeightForWidth())
+        self.t1p11frame.setSizePolicy(sizePolicy3)
+        self.t1p11frame.setMinimumSize(QSize(0, 100))
+        self.t1p11frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p11frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p11frame)
+
+        self.t1p12frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p12frame.setObjectName(u"t1p12frame")
+        sizePolicy3.setHeightForWidth(self.t1p12frame.sizePolicy().hasHeightForWidth())
+        self.t1p12frame.setSizePolicy(sizePolicy3)
+        self.t1p12frame.setMinimumSize(QSize(0, 100))
+        self.t1p12frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p12frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p12frame)
+
+        self.t1p13frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p13frame.setObjectName(u"t1p13frame")
+        sizePolicy3.setHeightForWidth(self.t1p13frame.sizePolicy().hasHeightForWidth())
+        self.t1p13frame.setSizePolicy(sizePolicy3)
+        self.t1p13frame.setMinimumSize(QSize(0, 100))
+        self.t1p13frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p13frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p13frame)
+
+        self.t1p14frame = QFrame(self.scrollAreaWidgetContents)
+        self.t1p14frame.setObjectName(u"t1p14frame")
+        sizePolicy3.setHeightForWidth(self.t1p14frame.sizePolicy().hasHeightForWidth())
+        self.t1p14frame.setSizePolicy(sizePolicy3)
+        self.t1p14frame.setMinimumSize(QSize(0, 100))
+        self.t1p14frame.setFrameShape(QFrame.StyledPanel)
+        self.t1p14frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_33.addWidget(self.t1p14frame)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.verticalLayout_30.addWidget(self.scrollArea)
+
+
+        self.horizontalLayout_22.addWidget(self.frame_20)
+
+        self.frame_21 = QFrame(self.matchPanelSubContainer)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setMinimumSize(QSize(200, 0))
+        self.frame_21.setMaximumSize(QSize(250, 16777215))
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_31 = QVBoxLayout(self.frame_21)
+        self.verticalLayout_31.setSpacing(0)
+        self.verticalLayout_31.setObjectName(u"verticalLayout_31")
+        self.verticalLayout_31.setContentsMargins(0, 0, 0, 0)
+        self.matchPageCountryCombo = QComboBox(self.frame_21)
+        self.matchPageCountryCombo.setObjectName(u"matchPageCountryCombo")
+        self.matchPageCountryCombo.setMinimumSize(QSize(0, 50))
+
+        self.verticalLayout_31.addWidget(self.matchPageCountryCombo)
+
+        self.matchPageCityCombo = QComboBox(self.frame_21)
+        self.matchPageCityCombo.setObjectName(u"matchPageCityCombo")
+        self.matchPageCityCombo.setMinimumSize(QSize(0, 50))
+
+        self.verticalLayout_31.addWidget(self.matchPageCityCombo)
+
+        self.matchPageStadiumCombo = QComboBox(self.frame_21)
+        self.matchPageStadiumCombo.setObjectName(u"matchPageStadiumCombo")
+        self.matchPageStadiumCombo.setMinimumSize(QSize(0, 50))
+
+        self.verticalLayout_31.addWidget(self.matchPageStadiumCombo)
+
+        self.matchPageDateEdit = QDateEdit(self.frame_21)
+        self.matchPageDateEdit.setObjectName(u"matchPageDateEdit")
+        self.matchPageDateEdit.setMinimumSize(QSize(0, 50))
+
+        self.verticalLayout_31.addWidget(self.matchPageDateEdit)
+
+
+        self.horizontalLayout_22.addWidget(self.frame_21)
+
+        self.frame_22 = QFrame(self.matchPanelSubContainer)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_32 = QVBoxLayout(self.frame_22)
+        self.verticalLayout_32.setSpacing(0)
+        self.verticalLayout_32.setObjectName(u"verticalLayout_32")
+        self.verticalLayout_32.setContentsMargins(0, 0, 0, 0)
+        self.team2Combo = QComboBox(self.frame_22)
+        self.team2Combo.setObjectName(u"team2Combo")
+
+        self.verticalLayout_32.addWidget(self.team2Combo)
+
+        self.scrollArea_2 = QScrollArea(self.frame_22)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 203, 1496))
+        self.verticalLayout_34 = QVBoxLayout(self.scrollAreaWidgetContents_2)
+        self.verticalLayout_34.setObjectName(u"verticalLayout_34")
+        self.t2p1frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p1frame.setObjectName(u"t2p1frame")
+        sizePolicy3.setHeightForWidth(self.t2p1frame.sizePolicy().hasHeightForWidth())
+        self.t2p1frame.setSizePolicy(sizePolicy3)
+        self.t2p1frame.setMinimumSize(QSize(0, 100))
+        self.t2p1frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p1frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p1frame)
+
+        self.t2p2frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p2frame.setObjectName(u"t2p2frame")
+        sizePolicy3.setHeightForWidth(self.t2p2frame.sizePolicy().hasHeightForWidth())
+        self.t2p2frame.setSizePolicy(sizePolicy3)
+        self.t2p2frame.setMinimumSize(QSize(0, 100))
+        self.t2p2frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p2frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p2frame)
+
+        self.t2p3frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p3frame.setObjectName(u"t2p3frame")
+        sizePolicy3.setHeightForWidth(self.t2p3frame.sizePolicy().hasHeightForWidth())
+        self.t2p3frame.setSizePolicy(sizePolicy3)
+        self.t2p3frame.setMinimumSize(QSize(0, 100))
+        self.t2p3frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p3frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p3frame)
+
+        self.t2p4frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p4frame.setObjectName(u"t2p4frame")
+        sizePolicy3.setHeightForWidth(self.t2p4frame.sizePolicy().hasHeightForWidth())
+        self.t2p4frame.setSizePolicy(sizePolicy3)
+        self.t2p4frame.setMinimumSize(QSize(0, 100))
+        self.t2p4frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p4frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p4frame)
+
+        self.t2p5frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p5frame.setObjectName(u"t2p5frame")
+        sizePolicy3.setHeightForWidth(self.t2p5frame.sizePolicy().hasHeightForWidth())
+        self.t2p5frame.setSizePolicy(sizePolicy3)
+        self.t2p5frame.setMinimumSize(QSize(0, 100))
+        self.t2p5frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p5frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p5frame)
+
+        self.t2p6frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p6frame.setObjectName(u"t2p6frame")
+        sizePolicy3.setHeightForWidth(self.t2p6frame.sizePolicy().hasHeightForWidth())
+        self.t2p6frame.setSizePolicy(sizePolicy3)
+        self.t2p6frame.setMinimumSize(QSize(0, 100))
+        self.t2p6frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p6frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p6frame)
+
+        self.t2p7frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p7frame.setObjectName(u"t2p7frame")
+        sizePolicy3.setHeightForWidth(self.t2p7frame.sizePolicy().hasHeightForWidth())
+        self.t2p7frame.setSizePolicy(sizePolicy3)
+        self.t2p7frame.setMinimumSize(QSize(0, 100))
+        self.t2p7frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p7frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p7frame)
+
+        self.t2p8frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p8frame.setObjectName(u"t2p8frame")
+        sizePolicy3.setHeightForWidth(self.t2p8frame.sizePolicy().hasHeightForWidth())
+        self.t2p8frame.setSizePolicy(sizePolicy3)
+        self.t2p8frame.setMinimumSize(QSize(0, 100))
+        self.t2p8frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p8frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p8frame)
+
+        self.t2p9frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p9frame.setObjectName(u"t2p9frame")
+        sizePolicy3.setHeightForWidth(self.t2p9frame.sizePolicy().hasHeightForWidth())
+        self.t2p9frame.setSizePolicy(sizePolicy3)
+        self.t2p9frame.setMinimumSize(QSize(0, 100))
+        self.t2p9frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p9frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p9frame)
+
+        self.t2p10frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p10frame.setObjectName(u"t2p10frame")
+        sizePolicy3.setHeightForWidth(self.t2p10frame.sizePolicy().hasHeightForWidth())
+        self.t2p10frame.setSizePolicy(sizePolicy3)
+        self.t2p10frame.setMinimumSize(QSize(0, 100))
+        self.t2p10frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p10frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p10frame)
+
+        self.t2p11frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p11frame.setObjectName(u"t2p11frame")
+        sizePolicy3.setHeightForWidth(self.t2p11frame.sizePolicy().hasHeightForWidth())
+        self.t2p11frame.setSizePolicy(sizePolicy3)
+        self.t2p11frame.setMinimumSize(QSize(0, 100))
+        self.t2p11frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p11frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p11frame)
+
+        self.t2p12frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p12frame.setObjectName(u"t2p12frame")
+        sizePolicy3.setHeightForWidth(self.t2p12frame.sizePolicy().hasHeightForWidth())
+        self.t2p12frame.setSizePolicy(sizePolicy3)
+        self.t2p12frame.setMinimumSize(QSize(0, 100))
+        self.t2p12frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p12frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p12frame)
+
+        self.t2p13frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p13frame.setObjectName(u"t2p13frame")
+        sizePolicy3.setHeightForWidth(self.t2p13frame.sizePolicy().hasHeightForWidth())
+        self.t2p13frame.setSizePolicy(sizePolicy3)
+        self.t2p13frame.setMinimumSize(QSize(0, 100))
+        self.t2p13frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p13frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p13frame)
+
+        self.t2p14frame = QFrame(self.scrollAreaWidgetContents_2)
+        self.t2p14frame.setObjectName(u"t2p14frame")
+        sizePolicy3.setHeightForWidth(self.t2p14frame.sizePolicy().hasHeightForWidth())
+        self.t2p14frame.setSizePolicy(sizePolicy3)
+        self.t2p14frame.setMinimumSize(QSize(0, 100))
+        self.t2p14frame.setFrameShape(QFrame.StyledPanel)
+        self.t2p14frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_34.addWidget(self.t2p14frame)
+
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+
+        self.verticalLayout_32.addWidget(self.scrollArea_2)
+
+
+        self.horizontalLayout_22.addWidget(self.frame_22)
+
+
+        self.verticalLayout_29.addWidget(self.matchPanelSubContainer)
+
+        self.mainPages.addWidget(self.page_9)
         self.page_6 = QWidget()
         self.page_6.setObjectName(u"page_6")
         self.verticalLayout_16 = QVBoxLayout(self.page_6)
@@ -531,7 +940,7 @@ class Ui_MainWindow(object):
 
         self.camControllerCloseBtn = QPushButton(self.frame_12)
         self.camControllerCloseBtn.setObjectName(u"camControllerCloseBtn")
-        self.camControllerCloseBtn.setIcon(icon7)
+        self.camControllerCloseBtn.setIcon(icon8)
 
         self.horizontalLayout_15.addWidget(self.camControllerCloseBtn, 0, Qt.AlignRight)
 
@@ -701,7 +1110,7 @@ class Ui_MainWindow(object):
         self.camControllerOpenBtn = QPushButton(self.camPanelAddressMenuContainer)
         self.camControllerOpenBtn.setObjectName(u"camControllerOpenBtn")
         self.camControllerOpenBtn.setFont(font)
-        self.camControllerOpenBtn.setIcon(icon9)
+        self.camControllerOpenBtn.setIcon(icon10)
         self.camControllerOpenBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_13.addWidget(self.camControllerOpenBtn)
@@ -776,7 +1185,7 @@ class Ui_MainWindow(object):
 
         self.closeRightMenuBtn = QPushButton(self.frame_8)
         self.closeRightMenuBtn.setObjectName(u"closeRightMenuBtn")
-        self.closeRightMenuBtn.setIcon(icon7)
+        self.closeRightMenuBtn.setIcon(icon8)
         self.closeRightMenuBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_9.addWidget(self.closeRightMenuBtn, 0, Qt.AlignRight)
@@ -856,9 +1265,9 @@ class Ui_MainWindow(object):
 
         self.closeNotificationBtn = QPushButton(self.frame_9)
         self.closeNotificationBtn.setObjectName(u"closeNotificationBtn")
-        icon14 = QIcon()
-        icon14.addFile(u":/icons-dark/icons/dark/x-octagon.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.closeNotificationBtn.setIcon(icon14)
+        icon15 = QIcon()
+        icon15.addFile(u":/icons-dark/icons/dark/x-octagon.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.closeNotificationBtn.setIcon(icon15)
         self.closeNotificationBtn.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_10.addWidget(self.closeNotificationBtn, 0, Qt.AlignRight)
@@ -924,6 +1333,10 @@ class Ui_MainWindow(object):
         self.menuBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Menu", None))
 #endif // QT_CONFIG(tooltip)
         self.menuBtn.setText("")
+#if QT_CONFIG(tooltip)
+        self.matchBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Home", None))
+#endif // QT_CONFIG(tooltip)
+        self.matchBtn.setText(QCoreApplication.translate("MainWindow", u"camera", None))
 #if QT_CONFIG(tooltip)
         self.camBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Home", None))
 #endif // QT_CONFIG(tooltip)

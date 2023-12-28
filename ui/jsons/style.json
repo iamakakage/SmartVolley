@@ -151,6 +151,7 @@
 				{
 					"navigationButtons":[
 						{
+							"matchBtn": "page_9",
 							"camBtn": "page_6",
 							"dataBtn": "page_7",
 							"reportBtn": "page_8"
@@ -193,6 +194,7 @@
 	"QPushButtonGroup": [
 		{
 			"Buttons": [
+				"matchBtn",
 				"camBtn",
 				"dataBtn",
 				"reportBtn"

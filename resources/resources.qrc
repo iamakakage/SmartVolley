@@ -289,6 +289,7 @@
     <file>icons/light/zoom-out.svg</file>
   </qresource>
   <qresource prefix="icons-downloaded">
+    <file>icons/downloaded/match.png</file>
     <file>icons/downloaded/cam.png</file>
   </qresource>
   <qresource prefix="icons-dark">
@@ -588,5 +589,21 @@
     <file>images/downloaded/v1.jpg</file>
     <file>images/downloaded/v2.jpg</file>
     <file>images/downloaded/disconnected.jpg</file>
+  </qresource>
+  <qresource prefix="images-jersey-sepahan">
+    <file>images/jersey/sepahan/1.png</file>
+    <file>images/jersey/sepahan/2.png</file>
+    <file>images/jersey/sepahan/5.png</file>
+    <file>images/jersey/sepahan/6.png</file>
+    <file>images/jersey/sepahan/8.png</file>
+    <file>images/jersey/sepahan/9.png</file>
+    <file>images/jersey/sepahan/10.png</file>
+    <file>images/jersey/sepahan/11.png</file>
+    <file>images/jersey/sepahan/12.png</file>
+    <file>images/jersey/sepahan/13.png</file>
+    <file>images/jersey/sepahan/16.png</file>
+    <file>images/jersey/sepahan/17.png</file>
+    <file>images/jersey/sepahan/19.png</file>
+    <file>images/jersey/sepahan/20.png</file>
   </qresource>
 </RCC>

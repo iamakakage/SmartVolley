@@ -7,6 +7,7 @@ from Custom_Widgets import *
 import camera
 import media
 import database
+import comboFiller
 import warnings
 warnings.filterwarnings("ignore")
 class MainWindow(QMainWindow):
@@ -24,6 +25,9 @@ class MainWindow(QMainWindow):
         self.recorder = media.recorder()
 
         self.ui.closeBtn.installEventFilter(self)
+
+        self.comboFiller = comboFiller.comboBoxFiller(self)
+        self.comboFiller.fillCountry()
 
         #self.databaseHandler = database.database_handler(container = self, host = "localhost", user = "root", password = "Ma77266100$1372mysql", database = "smartvolley")
 
