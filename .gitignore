@@ -1,4 +1,5 @@
 ui/modules/__pycache__/
 handlers/__pycache__/
+__pycache__/
 records/
 .idea/

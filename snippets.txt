@@ -1,0 +1,3 @@
+#login.py
+Form.setWindowFlags(Qt.FramelessWindowHint)
+Form.setAttribute(Qt.WA_TranslucentBackground)

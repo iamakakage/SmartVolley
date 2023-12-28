@@ -84,7 +84,7 @@ border-radius:15px;</string>
      <string>Log In</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="usernameLe">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -109,7 +109,7 @@ padding-bottom:7px;</string>
      <string>Username</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="passwordLe">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -137,7 +137,7 @@ padding-bottom:7px;</string>
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="loginBtn">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -155,15 +155,15 @@ padding-bottom:7px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton#pushButton{	
+     <string notr="true">QPushButton#loginBtn{	
 	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(20, 47, 78, 219), stop:1 rgba(85, 98, 112, 226));
 	color:rgba(255, 255, 255, 210);
 	border-radius:5px;
 }
-QPushButton#pushButton:hover{	
+QPushButton#loginBtn:hover{	
 	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:0.477, stop:0 rgba(40, 67, 98, 219), stop:1 rgba(105, 118, 132, 226));
 }
-QPushButton#pushButton:pressed{	
+QPushButton#loginBtn:pressed{	
 	padding-left:5px;
 	padding-top:5px;
 	background-color:rgba(105, 118, 132, 200);

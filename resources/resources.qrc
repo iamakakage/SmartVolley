@@ -584,6 +584,9 @@
     <file>logos/1.png</file>
   </qresource>
   <qresource prefix="images-downloaded">
+    <file>images/downloaded/background.png</file>
+    <file>images/downloaded/v1.jpg</file>
+    <file>images/downloaded/v2.jpg</file>
     <file>images/downloaded/disconnected.jpg</file>
   </qresource>
 </RCC>

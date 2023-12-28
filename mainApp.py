@@ -6,6 +6,9 @@ from interface import *
 from Custom_Widgets import *
 import camera
 import media
+import database
+import warnings
+warnings.filterwarnings("ignore")
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
         QMainWindow.__init__(self)
@@ -19,6 +22,10 @@ class MainWindow(QMainWindow):
         self.cameraHandler = camera.camera_handler(container = self)
         self.defaultCameraAddress = "127.0.0.1"
         self.recorder = media.recorder()
+
+        self.ui.closeBtn.installEventFilter(self)
+
+        #self.databaseHandler = database.database_handler(container = self, host = "localhost", user = "root", password = "Ma77266100$1372mysql", database = "smartvolley")
 
     def connectEvents(self):
         #Center Menu
@@ -64,8 +71,11 @@ class MainWindow(QMainWindow):
                 print("unchecked")
                 if self.recorder.recording_started:
                     self.recorder.stop()
+    def eventFilter(self, widget, event):
+        if event.type() == QtCore.QEvent.MouseButtonPress and widget is self.ui.closeBtn:
+            sys.exit()
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    window = MainWindow()
-    sys.exit(app.exec_())
+# if __name__ == "__main__":
+#     app = QApplication(sys.argv)
+#     window = MainWindow()
+#     sys.exit(app.exec_())
