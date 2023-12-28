@@ -2,6 +2,8 @@ from threading import  Thread
 import sys
 import cv2
 import os
+from datetime import date
+import time
 
 class recorder:
     def __init__(self):
@@ -15,7 +17,10 @@ class recorder:
         fheight = fshape[0]
         fwidth = fshape[1]
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
-        fileAddress = "output.avi"
+        fileDirectory = "./records/"+str(date.today())
+        os.makedirs(fileDirectory,exist_ok=True)
+        current_time = time.localtime(time.time())
+        fileAddress = fileDirectory+"/"+str(current_time.tm_hour)+"-"+str(current_time.tm_min)+"-"+str(current_time.tm_sec)+".avi"
         self.writer = cv2.VideoWriter(fileAddress, fourcc, 30.0, (fwidth, fheight))
     def update(self):
         while self.recording_started:
